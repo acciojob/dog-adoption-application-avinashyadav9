@@ -4,69 +4,7 @@
 
 <head>
 	<link rel="stylesheet" href="styles.css">
-	<style>
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #f9f9f9;
-      padding: 20px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-    }
-
-    form {
-      background-color: #fff;
-      padding: 20px;
-      border-radius: 8px;
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-      width: 100%;
-      max-width: 400px;
-    }
-
-    form h1 {
-      font-size: 1.5rem;
-      margin-bottom: 20px;
-      color: #333;
-      text-align: center;
-    }
-
-    label {
-      display: block;
-      margin: 10px 0 5px;
-      font-weight: bold;
-      color: #555;
-    }
-
-    input[type="text"],
-    select {
-      width: 100%;
-      padding: 10px;
-      margin-bottom: 15px;
-      border: 1px solid #ddd;
-      border-radius: 4px;
-      font-size: 1rem;
-    }
-
-    input[type="checkbox"] {
-      margin-right: 10px;
-    }
-
-    button {
-      width: 100%;
-      padding: 10px;
-      background-color: #4CAF50;
-      color: white;
-      border: none;
-      border-radius: 4px;
-      font-size: 1rem;
-      cursor: pointer;
-    }
-
-    button:hover {
-      background-color: #45a049;
-    }
-  </style>
+	
 </head>
 
 <body>
@@ -83,12 +21,12 @@
     <input type="text" id="address" name="address" placeholder="Address" required>
 
     <label>
-      <input type="checkbox" id="checkbox" name="livedWithDog" value="Have you ever lived with a Dog before?">
+      <input type="checkbox" id="checkbox" name="livedWithDog">
       Have you ever lived with a Dog before?
     </label>
 
-    <label for="breeds">Please select your preferred breeds</label>
-    <select id="breeds" name="breeds" multiple required>
+    <label for="multiselect">Please select your preferred breeds</label>
+    <select id="multiselect" name="breeds" multiple required>
       <option value="labrador">Labrador</option>
       <option value="german_shepherd">German Shepherd</option>
       <option value="golden_retriever">Golden Retriever</option>
@@ -96,9 +34,9 @@
       <option value="pug">Pug</option>
     </select>
 
-    <button id="button" type="submit">Submit</button>
+    <button id="submit" type="submit">Submit</button>
   </form>
-	<!-- the entire body must be written by student -->
+	
     <script type="text/javascript" src="./script.js">
 </script>
 
